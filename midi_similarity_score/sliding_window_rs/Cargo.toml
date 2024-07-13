@@ -1,0 +1,15 @@
+[package]
+name = "midi_score"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+bpaf = { version = "0.9.12", features = ["bpaf_derive"] }
+midi-reader-writer = { version = "0.1.2", features = ["engine-midly-0-5", "midly-0-5"] }
+midly = { version = "0.5.3", features = ["strict"] }
+serde = { version = "1.0.204", features = ["serde_derive"] }
+serde-pickle = "1.1.1"
+tap = "1.0.1"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
